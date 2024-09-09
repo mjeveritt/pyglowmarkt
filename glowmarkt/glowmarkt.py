@@ -294,7 +294,7 @@ class BrightClient:
         else:
             cls = Unknown
 
-        print(datetime.datetime.fromtimestamp(resp["data"][0][0]), tz=utc).astimezone()
+        print(datetime.datetime.fromtimestamp(resp["data"][0][0], tz=utc).astimezone())
 
         return [
             datetime.datetime.fromtimestamp(resp["data"][0][0], tz=utc).astimezone(),
