@@ -172,7 +172,7 @@ class BrightClient:
             r.client = self
 
             resources.append(r)
-            
+
         return resources
 
     def round(self, when, period):
@@ -391,7 +391,7 @@ class BrightClient:
             rt.rate = Pence(elt["currentRates"]["rate"])
             rt.standing_charge = Pence(elt["currentRates"]["standingCharge"])
             rt.tier = None
-            
+
             t.current_rates = rt
 
             # rts = []
@@ -404,6 +404,6 @@ class BrightClient:
             #     rts.append(rt)
 
             # t.structure = rts
-        
+
         return t
 
